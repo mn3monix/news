@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radar · Economia, Finanza, Geopolitica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner wrap">
+      <div class="brand">
+        <div class="logo">R</div>
+        <div>
+          <h1>Radar Geo-Finanziario</h1>
+          <p>Le notizie più rilevanti di economia, mercati e geopolitica</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="pill live" id="status">In aggiornamento…</span>
+        <span class="pill" id="clock">—</span>
+        <span class="pill" id="dups">0 doppioni</span>
+        <button type="button" class="ghost active-toggle" id="translateBtn" title="Traduci automaticamente le notizie in italiano">Traduci in italiano</button>
+        <button type="button" id="refresh">Aggiorna ora</button>
+      </div>
+    </div>
+  </header>
+  <div class="breaking">
+    <div class="breaking-inner wrap">
+      <span class="breaking-label">BREAKING</span>
+      <div class="breaking-track-wrap">
+        <div class="breaking-track" id="breakingTrack">
+          <a>Caricamento ultim’ora…</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="wrap">
+    <div class="top-wrap">
+      <h2>Notizie top</h2>
+      <div class="top-grid" id="topNews"><div class="empty">Selezione in corso…</div></div>
+    </div>
+    <div class="filters">
+      <button class="active" data-filter="all">Tutto</button>
+      <button data-filter="finanza">Economia &amp; Finanza</button>
+      <button data-filter="geo">Geopolitica</button>
+      <button data-filter="italia">Italia</button>
+      <button data-filter="polonia">Polonia</button>
+      <button data-filter="europa">Europa</button>
+    </div>
+    <div class="grid">
+      <section class="col" data-col="finanza">
+        <h2>Economia &amp; Finanza <span class="count" id="c-finanza">0</span></h2>
+        <div class="feed" id="finanza"><div class="loading">Caricamento fonti…</div></div>
+      </section>
+      <section class="col" data-col="geo">
+        <h2>Geopolitica <span class="count" id="c-geo">0</span></h2>
+        <div class="feed" id="geo"><div class="loading">Caricamento fonti…</div></div>
+      </section>
+      <section class="col" data-col="italia">
+        <h2>Italia <span class="count" id="c-italia">0</span></h2>
+        <div class="feed" id="italia"><div class="loading">Caricamento fonti…</div></div>
+      </section>
+      <section class="col" data-col="polonia">
+        <h2>Polonia <span class="count" id="c-polonia">0</span></h2>
+        <div class="feed" id="polonia"><div class="loading">Caricamento fonti…</div></div>
+      </section>
+      <section class="col" data-col="europa">
+        <h2>Europa <span class="count" id="c-europa">0</span></h2>
+        <div class="feed" id="europa"><div class="loading">Caricamento fonti…</div></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    Dashboard news economia, finanza, geopolitica. Aggiornamento automatico ogni 10 minuti.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
