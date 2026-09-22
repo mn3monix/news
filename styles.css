@@ -43,6 +43,13 @@
       font-size: 1.15rem; font-weight: 600; letter-spacing: .2px;
     }
     .brand p { color: var(--muted); font-size: .78rem; margin-top: 2px; }
+    .ver {
+      display: inline-block; margin-left: 8px; vertical-align: middle;
+      font-family: "IBM Plex Sans", system-ui, sans-serif;
+      font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+      color: #1a1304; background: var(--accent);
+      padding: 2px 7px; border-radius: 999px;
+    }
     .meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .pill {
       font-size: .75rem; color: var(--muted);
@@ -98,7 +105,6 @@
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
-
     .top-wrap { width: 100%; margin: 0 0 4px; padding: 0; }
     .top-wrap h2 {
       font-size: .78rem; letter-spacing: .12em; text-transform: uppercase;
@@ -170,7 +176,6 @@
     }
     article:last-child { border-bottom: 0; }
     article:hover { background: var(--bg-card); }
-
     article .row { display: grid; grid-template-columns: 84px 1fr; gap: 8px; align-items: start; }
     article .thumb, .top-card .thumb {
       width: 84px; height: 60px; object-fit: cover; border-radius: 6px;
@@ -184,7 +189,6 @@
     .top-card a { display: grid; grid-template-columns: 100px 1fr; gap: 8px; align-items: start; }
     .top-card .thumb, .top-card .ph { width: 100px; height: 70px; }
     .top-card .meta { min-width: 0; }
-
     article a { color: inherit; text-decoration: none; }
     .src {
       display: flex; justify-content: space-between; align-items: center;
